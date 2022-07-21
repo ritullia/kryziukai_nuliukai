@@ -11,6 +11,7 @@ function Cell() {
 
     useEffect(() => {
         checkWinner();
+        noWinner();
 
         if (gamePlayer === 'X') {
             setGamePlayer('O');
@@ -52,6 +53,18 @@ function Cell() {
                 setResult({ winner: gamePlayer, state: 'Won!' });
             }
         });
+    };
+
+    const noWinner = () => {
+        let fill = true;
+        cell.forEach((sqr) => {
+            if (sqr === '') {
+                fill = false;
+            }
+        });
+        if (fill) {
+            setResult({ winner: 'No Winner', state: 'Tie' });
+        }
     };
 
     return (
