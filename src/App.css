@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background:  #4b6cb7
+  background:  #e6faf9
 }
 .game {
   
@@ -19,15 +19,15 @@ body {
       text-align: center;
       margin-bottom: 2vmin;
       font-size: 24px;
-      color: #e5edef;
+      color: #292464;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
 .cell-board{
   width: 600px;
   height: 600px;
-  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-  border: 1px solid #515ada;
+  background: linear-gradient(90deg, #ffffff 0%, #dfdede 100%);
+  border: 1px solid ##dfc3f0;
   display: flex;
   flex-direction: column;
 }
@@ -40,6 +40,13 @@ body {
   
 }
 
+.player{
+  display: flex;
+  flex-direction: row;
+  color: #850f61;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .sqr {
   flex: 35%;
   display: grid;
@@ -49,12 +56,12 @@ body {
   border: 3px solid #ffffff;
   place-items: center;
   font-size: 74px;
-  color: #391ea2;
+  color: #130841;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .sqr:active{
-  background-color: #eda2d8;
+  background-color: #cce0e9;
 }
 
 
